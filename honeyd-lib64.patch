@@ -1,0 +1,22 @@
+diff -burN honeyd-0.8.orig/configure.in honeyd-0.8/configure.in
+--- honeyd-0.8.orig/configure.in	2004-09-05 10:11:20.959326448 +0200
++++ honeyd-0.8/configure.in	2004-09-05 10:15:55.342613848 +0200
+@@ -421,14 +421,14 @@
+     LIBS="$LIBDL $LIBS"
+ 
+     dnl ugly, ugly hack		     
+-    LIBCGUESS=`echo /lib/libc.so.*`
+-    USRLIBCGUESS=`echo /usr/lib/libc.so*`
++    LIBCGUESS=`echo /lib64/libc.so.*`
++    USRLIBCGUESS=`echo /usr/lib64/libc.so*`
+     
+-    if test "$USRLIBCGUESS" = "/usr/lib/libc.so.*"; then
++    if test "$USRLIBCGUESS" = "/usr/lib64/libc.so.*"; then
+        USRLIBCGUESS=""
+     fi
+     
+-    if test "$LIBCGUESS" = "/lib/libc.so.*"; then
++    if test "$LIBCGUESS" = "/lib64/libc.so.*"; then
+        LIBCGUESS=""
+     fi
+     
