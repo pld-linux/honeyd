@@ -26,8 +26,8 @@ virtual systems.
 Honeyd jest ma³ym programem tworz±cym wirtualne sieci i serwery.
 Serwery te mog± zostaæ skonfigurowane tak, by uruchamiaæ konkretne
 serwisy, i ich osobowo¶æ mo¿e zostaæ dostosowana w ten sposób, by
-wygl±da³o, ¿e dzia³aj±na ró¿nych systemach operacyjnych. Honeyd daje
-mo¿liwo¶æ aby jeden komputer symulowa³ wiele serwerów w wielu
+wygl±da³o, ¿e dzia³aj± na ró¿nych systemach operacyjnych. Honeyd 
+daje mo¿liwo¶æ aby jeden komputer symulowa³ wiele serwerów w wielu
 podsieciach.
 
 %prep
