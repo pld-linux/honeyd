@@ -1,18 +1,18 @@
 Summary:	Creates virtual networks and host
 Summary(pl):	Tworzy wirtualne sieci i serwery
 Name:		honeyd
-Version:	0.7a
+Version:	0.8
 Release:	0.01
 License:	BSD
 Group:		Networking/Daemons
 Source0:	http://www.citi.umich.edu/u/provos/honeyd/%{name}-%{version}.tar.gz
-# Source0-md5:	04ae109952d274aba4c0ab398e213ef2
+# Source0-md5:	d8d3692176d2f78841f7a3384ccb0b73
 URL:		http://www.citi.umich.edu/u/provos/honeyd/
-BuildRequires:	libdnet-devel libevent-devel
+BuildRequires:	libdnet-devel
+BuildRequires:	libevent-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-
 Honeyd is a small daemon that creates virtual hosts on a network. The
 hosts can be configured to run arbitrary services, and their
 personality can be adapted so that they appear to be running certain
@@ -23,7 +23,6 @@ It also deters adversaries by hiding real systems in the middle of
 virtual systems.
 
 %description -l pl
-
 Honeyd jest ma³ym programem tworz±cym wirtualne sieci i serwery.
 Serwery te mog± zostaæ skonfigurowane tak, by uruchamiaæ konkretne
 serwisy, i ich osobowo¶æ mo¿e zostaæ dostosowana w ten sposób, by
