@@ -12,6 +12,8 @@ Source0:	http://www.citi.umich.edu/u/provos/honeyd/%{name}-%{version}.tar.gz
 # Source0-md5:	d8d3692176d2f78841f7a3384ccb0b73
 Patch0:		%{name}-lib64.patch
 URL:		http://www.citi.umich.edu/u/provos/honeyd/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	glib2-devel
 BuildRequires:	libdnet-devel
 BuildRequires:	libevent-devel
