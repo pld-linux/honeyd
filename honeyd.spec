@@ -1,15 +1,21 @@
+# ToDo:
+# - split into subpackage / drop headers
+# - include scripts/ (where?)
 Summary:	Creates virtual networks and host
 Summary(pl):	Tworzy wirtualne sieci i serwery
 Name:		honeyd
 Version:	0.8
-Release:	0.01
+Release:	0.1
 License:	BSD
 Group:		Networking/Daemons
 Source0:	http://www.citi.umich.edu/u/provos/honeyd/%{name}-%{version}.tar.gz
 # Source0-md5:	d8d3692176d2f78841f7a3384ccb0b73
 URL:		http://www.citi.umich.edu/u/provos/honeyd/
+BuildRequires:	glib2-devel
 BuildRequires:	libdnet-devel
 BuildRequires:	libevent-devel
+BuildRequires:	libpcap-devel
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -34,7 +40,8 @@ podsieciach.
 %setup -q
 
 %build
-#%{__gettextize}
+glib-gettextize
+%{__libtoolize}
 %{__aclocal}
 %{__autoconf}
 %{__autoheader}
@@ -51,16 +58,11 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%pre
-
-%post
-
-%preun
-
-%postun
-
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS CREDITS ChangeLog NEWS README THANKS TODO
+%doc README TODO
 %attr(755,root,root) %{_bindir}/*
+%{_libdir}/*
 %{_datadir}/%{name}
+%{_includedir}/*
+%{_mandir}/man8/*
