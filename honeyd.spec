@@ -41,7 +41,7 @@ podsieciach.
 
 %prep
 %setup -q
-%ifarch amd64
+%if "%{_lib}" == "lib64"
 %patch0 -p1
 %endif
 
