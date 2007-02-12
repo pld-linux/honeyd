@@ -2,7 +2,7 @@
 # - split into subpackage / drop headers
 # - include scripts/ (where?)
 Summary:	Creates virtual networks and host
-Summary(pl):	Tworzy wirtualne sieci i serwery
+Summary(pl.UTF-8):   Tworzy wirtualne sieci i serwery
 Name:		honeyd
 Version:	0.8
 Release:	0.1
@@ -31,12 +31,12 @@ security by providing mechanisms for threat detection and assessment.
 It also deters adversaries by hiding real systems in the middle of
 virtual systems.
 
-%description -l pl
-Honeyd jest ma³ym programem tworz±cym wirtualne sieci i serwery.
-Serwery te mog± zostaæ skonfigurowane tak, by uruchamiaæ konkretne
-serwisy, i ich osobowo¶æ mo¿e zostaæ dostosowana w ten sposób, by
-wygl±da³o, ¿e dzia³aj± na ró¿nych systemach operacyjnych. Honeyd 
-daje mo¿liwo¶æ aby jeden komputer symulowa³ wiele serwerów w wielu
+%description -l pl.UTF-8
+Honeyd jest maÅ‚ym programem tworzÄ…cym wirtualne sieci i serwery.
+Serwery te mogÄ… zostaÄ‡ skonfigurowane tak, by uruchamiaÄ‡ konkretne
+serwisy, i ich osobowoÅ›Ä‡ moÅ¼e zostaÄ‡ dostosowana w ten sposÃ³b, by
+wyglÄ…daÅ‚o, Å¼e dziaÅ‚ajÄ… na rÃ³Å¼nych systemach operacyjnych. Honeyd 
+daje moÅ¼liwoÅ›Ä‡ aby jeden komputer symulowaÅ‚ wiele serwerÃ³w w wielu
 podsieciach.
 
 %prep
