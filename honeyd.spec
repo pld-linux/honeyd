@@ -2,7 +2,7 @@
 # - split into subpackage / drop headers
 # - include scripts/ (where?)
 Summary:	Creates virtual networks and host
-Summary(pl.UTF-8):   Tworzy wirtualne sieci i serwery
+Summary(pl.UTF-8):	Tworzy wirtualne sieci i serwery
 Name:		honeyd
 Version:	0.8
 Release:	0.1
