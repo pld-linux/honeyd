@@ -4,14 +4,14 @@
 Summary:	Creates virtual networks and host
 Summary(pl.UTF-8):	Tworzy wirtualne sieci i serwery
 Name:		honeyd
-Version:	0.8
+Version:	1.5c
 Release:	0.1
 License:	BSD
 Group:		Networking/Daemons
 Source0:	http://www.citi.umich.edu/u/provos/honeyd/%{name}-%{version}.tar.gz
-# Source0-md5:	d8d3692176d2f78841f7a3384ccb0b73
+# Source0-md5:	9887b44333e380a2205f64fa245cb727
 Patch0:		%{name}-lib64.patch
-URL:		http://www.citi.umich.edu/u/provos/honeyd/
+URL:		http://www.honeyd.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	glib2-devel
@@ -66,9 +66,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README TODO
+%doc README
 %attr(755,root,root) %{_bindir}/*
 %{_libdir}/*
 %{_datadir}/%{name}
 %{_includedir}/*
+%{_mandir}/man1/*
 %{_mandir}/man8/*
