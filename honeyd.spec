@@ -42,7 +42,7 @@ podsieciach.
 %prep
 %setup -q
 %if "%{_lib}" == "lib64"
-%patch0 -p1
+%patch -P0 -p1
 %endif
 
 %build
